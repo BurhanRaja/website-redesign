@@ -22,6 +22,7 @@ import { BentoGrid, BentoGridItem } from "../animation/bento-grid";
 import { Skeleton } from "../ui/skeleton";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const MainHeader = () => {
   const [active, setActive] = useState(null);
@@ -40,7 +41,9 @@ const MainHeader = () => {
             </div>
             <ul className="col-span-2 flex justify-between items-center text-sm">
               {/* <ul className=""> */}
-              <li>Home</li>
+              <li>
+                <Link href={"/"}>Home</Link>
+              </li>
               <li>About</li>
               <li>Services</li>
               <li>Forex Solutions</li>
